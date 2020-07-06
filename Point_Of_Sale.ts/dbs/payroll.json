@@ -1,0 +1,16 @@
+{
+    "hourlies" : {
+        "hr-001" : {
+            "name":"John Smith",
+            "hourly-pay": 22.5,
+            "schedule": 7
+        }
+    },
+    "salaried": {
+        "sal-001":{
+            "name":"John Smith",
+            "monthly-pay": 2250,
+            "schedule": 30
+        }
+    }
+}
