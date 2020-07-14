@@ -1,8 +1,37 @@
-import { Cashier } from "./books/Employee.ts"
+import { Hourly_Employee , Salaried_Employee } from "./user/Employee.ts"
+import { Add_User_To_db } from "./user/User_Actions.ts"
 
-const People = JSON.parse(Deno.readTextFileSync("./dbs/employees.json"));
+// ============================
+// Create a new Hourly Employee
+// ============================
 
-const John = People.hourlies["hr-001"]
-const James = People.salaried["sal-001"]
+const john_smith = new Hourly_Employee(
+    
+    // Full Name
+    "John", 
+    "Smith",
+    
+    // Date of birth
+    { month: 1 , day: 12 , year: 1998 } , 
+    
+    // Hourly Wage
+    { wage: 22 , rate: "weekly" } 
 
-const Employees = { John , James }
+)
+
+const gary_smith = new Salaried_Employee(
+    
+    // Full Name
+    "Gary", 
+    "Smith",
+    
+    // Date of birth
+    { month: 4 , day: 1 , year: 1998 } , 
+    
+    // Salary Wage
+    { wage: 2200 , rate: "monthly" } 
+
+)
+
+Add_User_To_db(john_smith)
+Add_User_To_db(gary_smith)
