@@ -1,9 +1,60 @@
 {
-    "employees":{
-        "hourly":{
+  "employees": {
+    "hourly": {
+      "John_Smith": {
+        "fn": "John",
+        "ln": "Smith",
+        "dob": {
+          "month": 1,
+          "day": 12,
+          "year": 1998
         },
-        "salaried":{
-
+        "pay": {
+          "wage": 22,
+          "rate": "weekly"
         }
+      },
+      "Jay_Smith": {
+        "fn": "Jay",
+        "ln": "Smith",
+        "dob": {
+          "month": 1,
+          "day": 12,
+          "year": 1998
+        },
+        "pay": {
+          "wage": 22,
+          "rate": "weekly"
+        }
+      }
+    },
+    "salaried": {
+      "Gary_Smith": {
+        "fn": "Gary",
+        "ln": "Smith",
+        "dob": {
+          "month": 4,
+          "day": 1,
+          "year": 1998
+        },
+        "pay": {
+          "wage": 2200,
+          "rate": "monthly"
+        }
+      },
+      "Santa_Smith": {
+        "fn": "Santa",
+        "ln": "Smith",
+        "dob": {
+          "month": 4,
+          "day": 1,
+          "year": 1998
+        },
+        "pay": {
+          "wage": 2200,
+          "rate": "monthly"
+        }
+      }
     }
+  }
 }
